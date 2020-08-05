@@ -1,0 +1,21 @@
+name: Test workflow template
+
+on:
+  workflow_dispatch:
+    inputs:
+      text1:
+        description: "First text item"
+        required: true
+
+      text2:
+        description: "Second text item"
+        required: false
+        default: "Second item default."
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+      echo "Hello first input ${{ github.event.inputs.text1 }}"
+      echo "Second input ${{ github.event.inputs.text2 }}"
