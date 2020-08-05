@@ -1,0 +1,11 @@
+{
+  "name": "Test workflow",
+  "description": "Test workflow template",
+  "categories": [
+    "Python",
+    "Javascript",
+    "Typescript",
+    "C",
+    "C++"
+  ]
+}
