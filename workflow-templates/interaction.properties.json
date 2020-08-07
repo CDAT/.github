@@ -1,0 +1,12 @@
+{
+  "name": "First interaction",
+  "description": "Template for first interaction",
+  "categories": [
+    "Python",
+    "Javascript",
+    "Typescript",
+    "C",
+    "C++",
+    "Go"
+  ]
+}

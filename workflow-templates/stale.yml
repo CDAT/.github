@@ -1,0 +1,24 @@
+name: 'Mark and Close stale issues'
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Marking issue as stale, since there has been no activity in 30 days. This issue will be closed unless it is updated or the "stale" label is removed.'
+        stale-pr-message: 'Marking PR as stale, since there has been no activity in 30 days. This issue will be closed unless it is updated or the "stale" label is removed.'
+        close-issue-message:
+        close-pr-message:
+        days-before-stale: 30
+        days-before-close: 7
+        stale-issue-label: 'stale'
+        exempt-issue-label: 'needs-triage'
+        stale-pr-label: 'stale'
+        exempt-pr-label: 'needs-triage'
+        debug-only: false # Setting to true will enable dry-run

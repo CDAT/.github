@@ -1,0 +1,15 @@
+name: "First interaction"
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  interaction:
+    steps:
+    - uses: actions/first-interaction@v1
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
+      issues-message: ''
+      pr-message: ''
