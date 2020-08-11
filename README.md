@@ -12,7 +12,7 @@ This repository contains Github Action workflows and custom actions.
 
 ## First interactions
 
-This workflow will comment on new issue/pr when it's a users first time contributing.
+This workflow will comment on new issue/PR when it's a user's first time contributing.
 
 There are two customizable fields.
 
@@ -22,7 +22,7 @@ There are two customizable fields.
 ### Example
 ```yaml
 issue-message: |
-  Thank you for opening this issues.
+  Thank you for opening this issue.
 
   Here are some resources:
   - [CDAT](https://cdat.llnl.gov)
