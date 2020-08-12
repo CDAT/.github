@@ -1,0 +1,12 @@
+{
+  "name": "Mark stale issues",
+  "description": "Template for marking stale issues.",
+  "categories": [
+    "Python",
+    "Javascript",
+    "Typescript",
+    "C",
+    "C++",
+    "Go"
+  ]
+}
